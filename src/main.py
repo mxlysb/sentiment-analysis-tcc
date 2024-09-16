@@ -1,13 +1,13 @@
 import pandas as pd
-import re
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-from textblob import TextBlob
-
+import os
 import lyricsgenius
+from dotenv import load_dotenv
+
+load_dotenv()
 
 df = pd.read_csv("../Billboard_Hot100_Songs_Spotify_1946-2022.csv")
 
-token = "P_qy-mx-WVI0_Gcb24PVkq_jN9FnaP6OExA_dKhfo67YOlU6JECHuGuIjjPgqb04"
+token = os.getenv('GENIUS_TOKEN')
 genius = lyricsgenius.Genius(token)
 
 # Amostra para teste
