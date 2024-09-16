@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-df = pd.read_csv("../Billboard_Hot100_Songs_Spotify_1946-2022.csv")
+df = pd.read_csv("../data/Billboard_Hot100_Songs_Spotify_1946-2022.csv")
 
 token = os.getenv('GENIUS_TOKEN')
 genius = lyricsgenius.Genius(token)
