@@ -1,4 +1,4 @@
-# sentiment-analysis-tcc
+# ANÁLISE SENTIMENTAL DA RELAÇÃO ENTRE LETRAS MUSICAIS E EXPRESSÕES CULTURAIS
 
 ## Comandos
 
